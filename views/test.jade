@@ -1,0 +1,148 @@
+extends layout
+
+block head
+  link(rel="stylesheet", type="text/css", href="/css/slides.css")
+
+  script(type="text/javascript", src="/js/jquery-1.7.2.min.js")
+
+block container
+  header
+    nav
+      ul
+        li: button#prev-btn(title="Previous slide") Previous Slide
+        li
+          span#slide-number
+          span#slide-total
+        li: button#next-btn(title="Next Slide") Next Slide
+  #deck
+    section
+      img(src="img/title.png", width="860",  style="margin:0 auto;padding-top:100px;")
+    section
+      hgroup
+        h1 Why MongoDB
+      ul
+        li.action Agility
+        li.action Scalability
+        li.action Community
+        li.action Rich Query Language with MapReduce
+        li.action Full Consistency
+        li.action Transaction Support
+    section
+      h1 What is it used for?
+      ul
+        li.action Archiving and Event Logging
+        li.action Document and Content Management Systems
+        li.action ECommerce
+        li.action Gaming
+        li.action Mobile
+        li.action Real-time Analytics
+    section
+      h1 Who Uses it?
+      ul
+        li.action Forbes
+        li.action Disney
+        li.action Cisco
+        li.action Craigslist
+        li.action Foursquare
+        li.action MTV Networks
+    section
+      h1 The World is not Flat
+      h2 Solving problems is easier in Mongo
+      
+    section
+      hgroup
+        h1 Managing MongoDB
+        h2 It is easy as pie :)
+      ul.action
+        li Mongostat - a command tool to monitor performance
+        li Rest interface - to query for reports on the DB
+        li Mongoimport - to import data from JSON files!
+        li Mongoexport - dump data to JSON files.
+        
+    section
+      h1 What is NodeJS?
+      ul
+        li Evented Server-side Javascript
+        li Good at handling lots of different kinds of I/O at the same time.
+        li Achieves this by making all network I/O nonblocking and all file I/O asynchronous.
+    section
+      h1 Why do we need non-blocking?
+      ul
+        li Polling is too slow and inefficient.
+        li Live interaction requires the server to push data.
+        li In order to push data, the connections need to be persistent.
+        li The server needs to handle thousands of persistent connections
+    section
+      h1 Why use NodeJS?
+      ul
+        li.action End-to-end Javascript
+        li.action Scalability
+        li.action Real-time (websockets)
+        li.action Performance
+        li.action Thriving Community
+        li.action Finding Developers
+        li.action Productivity
+        li.action Enterprise
+    section
+      h1 Who Uses NodeJS?
+      ul
+        li.action Microsoft
+        li.action Walmart
+        li.action EBay
+        li.action Yahoo
+        li.action LinkedIn
+    
+        
+    
+    section
+      h1 Express
+      h2 High performance, web development for NodeJS
+      ul
+        li.action Robust routing
+        li.action Redirection helpers
+        li.action Application level view options
+        li.action Content negotiation
+        li.action Application mounting
+        li.action Focus on high performance
+        li.action Environmental based configuration
+    section
+      h1 Simple App in Express
+      pre
+        code
+          | var express = require('express');
+          | var app = express();
+          | 
+          | app.get('/hello.txt', function(req, res){
+          |   res.send('Hello World');
+          | });
+          | 
+          | app.listen(3000);
+        
+    section
+      h1 Jade
+      ul
+        li.action Client-side support
+        li.action Great Readability
+        li.action Block-expansion
+        li.action Mixins
+        li.action Static includes
+        li.action Attribute interpolation
+        li.action code is escaped by default for security
+        li.action contextual error reporting
+        li.action memory caching
+    section
+      hgroup &nbsp;
+      img(src="img/goose.png", width=521, height=116, style="margin:0 auto;")
+      ul
+        li.action Simple API
+        li.action Reduces the burden of nested async code
+        li.action Provides a robust data modeling layer
+        li.action Data integrity and sanitation
+        li.action Fine grain error handling
+        li.action Flow control to assist with complex business logic
+        li.action Hundreds of tests. (integration and spec)
+        li.action Used in Production
+  
+block scripts
+  script(type="text/javascript", src="/js/hiijs.js")
+  script(type="text/javascript", src="/js/htmlSlides.js")

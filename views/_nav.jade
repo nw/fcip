@@ -1,0 +1,24 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.brand(href="/") FCIS: Demo
+      .nav-collapse
+        ul.nav
+          block top-left-menu
+        ul.nav.pull-right
+          block top-right-menu
+          li.divider-vertical
+          li.dropdown
+            if session.user
+              li.dropdown
+                a.dropdown-toggle(data-toggle="dropdown")= session.user.name
+                  b.caret
+                ul.dropdown-menu
+                  li: a(href="/admin") Admin
+                  li: a(href="/logout") Logout
+            else
+              li: a(href="/login") Login

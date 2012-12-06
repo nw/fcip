@@ -1,0 +1,33 @@
+!!!5
+html
+  head
+    meta(charset="utf-8")
+    title FCIS: Demo
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    block head
+      link(rel="stylesheet", type="text/css", href="/css/bootstrap.css", media="all")
+      link(rel="stylesheet", type="text/css", href="/css/jquery-ui-datepicker.css")
+      link(rel="stylesheet", type="text/css", href="/css/tablesorter/style.css")
+      link(rel="stylesheet", type="text/css", href="/css/custom.css")
+      
+      script(type="text/javascript", src="/js/jquery-1.7.2.min.js")
+      script(type="text/javascript", src="/js/support/jquery-ui-1.8.22.custom.min.js")
+      script(type="text/javascript", src="/js/jquery-ui-datepicker.min.js")
+      script(type="text/javascript", src="/js/jquery.tablesorter.min.js")
+      script(type="text/javascript", src="/js/bootstrap.js")
+      script(type="text/javascript", src="/js/utils.js")
+  body
+    block container
+      .container-fluid
+        block nav
+          include _nav
+        #messages(style="position:fixed;left:30%;top:2px;width:40%;z-index:2000;")
+          block notifications
+        block content
+    block scripts
+      template(id="alert"):
+        .alert(class="alert-"+type)
+          a.close(data-dismiss="alert", href="#") × 
+          b= message
+      script(type="text/javascript", src='/js/behaviors.js?v='+app.set('git sha'))

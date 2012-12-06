@@ -1,0 +1,31 @@
+{
+  "name": "fcip-20121206",
+  "description": "Fort Collins Internet Professionals - 2012-12-06",
+  "author": "nw <nw@nwhite.net>",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/nw/fcip-20121206"
+  },
+  "engines": {
+    "node": "v0.8.x"
+  },
+  "dependencies": {
+    "express": "3.x"
+  , "express-mongoose": "0.1.0"
+  , "connect-redis": "1.4.5"
+  , "up": "0.2.x"
+  , "up-hook": "0.1.x"
+  , "async": "latest"
+  , "moment": "latest"
+  , "mongoose": "3.4.0"
+  , "jade": "latest"
+  , "jadevu": "latest"
+  , "stylus": "latest"
+  , "nib": "latest"
+  , "connect-timeout": "0.0.1"
+  , "log": "1.1.1"
+  , "nib": "0.2.0"
+  , "node-markdown": "latest"
+  , "mocha": "latest"
+  }
+}
