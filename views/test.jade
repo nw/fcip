@@ -46,9 +46,16 @@ block container
         li.action Foursquare
         li.action MTV Networks
     section
-      h1 The World is not Flat
-      h2 Solving problems is easier in Mongo
-      
+      h1 Solving problems is easier in Mongo
+      pre.action
+        code
+          | { comments: [1, 2, 3, 4]} // where order matters! along with relation
+      br
+      ul.action(style="clear:both")
+        li In SQL you have to create a table of children
+        li A reference sort field
+        li the sort field must be managed
+        li Perform Joins
     section
       hgroup
         h1 Managing MongoDB
@@ -92,7 +99,15 @@ block container
         li.action Yahoo
         li.action LinkedIn
     
-        
+    section
+      h1 NPM
+      h2 The community makes Node powerful
+      ul
+        li.action 10s of thousands of packages
+        li.action updated daily
+        li.action you can find code to do anything
+        li.action using is simple!
+        li.action locking in multiple versions of the same module is easy
     
     section
       h1 Express
