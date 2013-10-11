@@ -26,8 +26,4 @@ html
           block notifications
         block content
     block scripts
-      template(id="alert"):
-        .alert(class="alert-"+type)
-          a.close(data-dismiss="alert", href="#") × 
-          b= message
       script(type="text/javascript", src='/js/behaviors.js?v='+app.set('git sha'))
