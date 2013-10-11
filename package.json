@@ -13,8 +13,6 @@
     "express": "3.x"
   , "express-mongoose": "0.1.0"
   , "connect-redis": "1.4.5"
-  , "up": "0.2.x"
-  , "up-hook": "0.1.x"
   , "async": "latest"
   , "moment": "latest"
   , "mongoose": "3.4.0"
